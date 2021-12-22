@@ -1,0 +1,114 @@
+*{
+  font-family: 'Titillium Web', sans-serif;
+
+}
+h1{
+  color: #355681;
+}
+.application {
+    padding: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+.page-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel {
+  display: flex;
+}
+.recipe-panel {
+  padding: 0 80px;
+}
+
+.recipies-list {
+  padding: 0 5px;
+}
+
+#first {
+  width: 200px;
+  }
+  
+
+  .title{
+    /* margin: 1em 0 0.5em 0; */
+    font-weight: 600;
+    position: relative;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+    font-size: 22px;
+    line-height: 40px;
+    color: #355681;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(53,86,129, 0.3);
+  }
+
+  .description {
+    position: relative;
+  }
+
+  .itemsForRecipe {
+    position: relative;
+    top:10px;
+  }
+  .item {
+    border: 1px solid rgba(53,86,129, 0.3);
+  }
+
+  button{
+    position: relative;
+    top: 10px;
+    color: #fff; /* цвет текста */
+   
+    user-select: none; /* убирать выделение текста */
+    background: rgb(53,86,129); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+  }
+
+  .addToshoppingButton{
+    position: relative;
+    top: 10px;
+    color: #fff; /* цвет текста */
+   
+    user-select: none; /* убирать выделение текста */
+    background: rgb(53,86,129); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+  }
+
+  .addToshoppingButton:hover{
+    background:  rgb(68, 104, 151);
+
+  }
+ 
+  .addToshoppingButton:active {
+    background:  rgb(53, 71, 94);
+
+  }
+
+  button:hover {
+    background:  rgb(68, 104, 151);
+  }
+  button:active {
+    background:  rgb(53, 71, 94);
+  }
+
+  .recipe{
+    width: 170px;
+    border-bottom: 1px solid rgba(53,86,129, 0.3);
+    display: flex;
+    padding: 10px 15px;
+    background-color: #FFF;
+  }
+  .recipe:hover {
+    background-color: rgb(161, 194, 236);
+  }
+  .recipe:active {
+    background-color: rgb(53,86,129);
+  }
+
+  

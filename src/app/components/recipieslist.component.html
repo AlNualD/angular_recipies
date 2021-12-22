@@ -1,0 +1,29 @@
+<div class="application">
+    <div class="page-header">
+        <h1> Список покупок </h1>
+        <div><button class="goToShopping" (click)="onOpenShoppingListClick()">Открыть список покупок</button></div> 
+    </div>
+        
+    <div class="panel">
+        <div class="recipies-list" id="first">
+
+            <table class="table table-striped">
+                <tbody>
+                    <tr  *ngFor="let recepie of recipies">
+                        <td class="clickable-table" (click)="onRecipieClick(recepie)" [style.color]="!recepie.selected ? 'black' : 'white'"  [style.background-color]="!recepie.selected ? 'white' : '#355681'">{{recepie.name}}</td>
+                        
+                    </tr>
+                </tbody>
+                </table>
+        </div>
+        <div class = "recipe-panel" id="second">
+            <div class="title">{{curRecipe.name}}</div>
+            <div class="description">{{curRecipe.description}}</div>
+            <div class="itemsForRecipe" *ngFor="let item of curRecipe.items; let i = index;">
+                <div class="item">{{ item.name}} </div>
+            </div>
+            <input class="addToshoppingButton" [type]="curRecipe.selected ? 'button' : 'hidden'" value="Добавить в корзину" (click)="onAddItemsClick()">
+            
+        </div>
+    </div>
+</div>

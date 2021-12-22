@@ -1,0 +1,41 @@
+<div class="page-header">
+    <h1> Список покупок </h1>
+</div>
+<div class="panel">
+    <div class="form-inline">
+        <div class="form-group">
+            <div class="col-md-8">
+                <input class="form-control" [(ngModel)]="name" placeholder = "Название" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <input type="number" class="form-control" [(ngModel)]="amount" placeholder="Количество" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-8">
+                <button (click)="addItem(name, amount)">Добавить</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <button (click)="onClose()">Закрыть</button>
+        </div>
+    </div>
+    <table id="items-list" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Предмет</th>
+                <th>количество</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of items.getGlobalItems()">
+                <td>{{item.name}}</td>
+                <td>{{item.amount}}</td>
+                <td><div class="delete" (click)="onDeleteClick(item)">✖</div></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
