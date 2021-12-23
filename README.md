@@ -2,4 +2,5 @@
 
 
 запуск производится командой:
-  ng serve --open
+
+`ng serve --open`
